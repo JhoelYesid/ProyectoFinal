@@ -1,14 +1,39 @@
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
 
-@media only screen and (max-width: 767px) {
-  .container {
-    width: 100%;
+@media (max-width: 480px) {
+  body {
     padding: 10px;
   }
+  
+  #loginForm {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .sidebar {
+    left: -100%;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
 }
+
 #loginButton {
   background-color: #4267B2;
   color: white;
