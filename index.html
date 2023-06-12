@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>GUITARRA ELECTRICA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="loginButton" onclick="toggleLoginForm()">Iniciar sesión para más detalles de la página web</button>
+
+<div id="loginForm" style="display: none;">
+  <h2>Iniciar sesión</h2>
+  <form>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+    <button type="submit">Iniciar sesión</button>
+  </form>
+</div>
+<button class="menu-toggle" onclick="toggleMenu()">MENÚ</button>
+
+<div class="sidebar">
+    <button class="close-btn" onclick="toggleMenu()">Cerrar</button>
+    <ul class="menu">
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#partes">Partes de la Guitarra Eléctrica</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#tipos">Tipos de Guitarra Eléctrica</a></li>
+    </ul>
+</div>
+
+    <div class="background-container">
+        <img src="guitarra fondo.jpg" alt="Imagen de fondo" class="background-image">
+    </div>
+    <header>
+        <h1 class="animated-title marketing-title">GUITARRA ELÉCTRICA</h1>
+    </header>
+
+    <section id="introduccion">
+        <div class="container">
+            <div class="image-container">
+                <img src="introguitar.gif" alt="Guitarra eléctrica" class="gif">
+            </div>
+            <div class="text-container">
+                <h2 class="title1">Introducción a la Guitarra Eléctrica</h2>
+                <p class="parrafo">La guitarra eléctrica es un tipo de guitarra en la que, a diferencia de la guitarra española y la
+                    guitarra sajona, su caja no hace resonancia, por lo que el sonido se produce indirectamente por
+                    inducción eléctrica y a través de un amplificador o también a través de un pedal de efectos.</p>
+                <p class="parrafo">Dado que la señal generada es relativamente débil, esta se amplifica antes de enviarla a un altavoz.
+                    Esta señal de salida de la guitarra eléctrica puede ser fácilmente alterada mediante circuitos
+                    electrónicos para modificar algunos aspectos del sonido.
+                    La Guitarra Eléctrica es un instrumento que sin duda adquirió un lugar en el inconsciente de la
+                    cultura occidental, y se podría decir, mucho más profundo.Instrumento que debe su esencia y
+                    estructura base a la guitarra acústica (la que debe su origen a la guitarra flamenca) cuya
+                    diferencia principal hacia las demás guitarras es el tamaño de su caja acústica y el material
+                    empleado en sus cuerdas, esta con el tiempo evoluciono hasta adoptar un sistema de amplificación
+                    ajeno a sus cualidades innatas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partes">
+        <h2 class="title2">Partes de una Guitarra Eléctrica</h2>
+        <div class="container">
+            <div class="card">
+                <img src="partes1.jpg" alt="Cuerpo de guitarra">
+                <h3>Cuerpo</h3>
+            </div>
+            <div class="card">
+                <img src="partes2.jpg" alt="Mástil de guitarra">
+                <h3>Mástil</h3>
+            </div>
+            <div class="card">
+                <img src="partes3.jpg" alt="Cabezal de guitarra">
+                <h3>Cabezal</h3>
+            </div>
+            <div class="card">
+                <img src="partes4.jpg" alt="Pastillas de guitarra">
+                <h3>Pastillas</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia">
+        <h2 class="title3">Historia de la Guitarra Eléctrica</h2>
+        <p class="parrafo">La guitarra eléctrica fue inventada entre las primeras dos décadas del siglo XX,
+            concretamente en 1920. Era un tipo de guitarra poco corriente y normalmente de fabricación casera cuyo
+            diseño se asemejaba a una sartén y se solía tocar con la técnica slide. La labor de Leo Fender en 1950
+            empezaría la revolución de ese instrumento llegando a comercializarse a nivel mundial. Sin saberlo, Leo
+            Fender crearía una gran historia con su nueva invención. A partir de ese momento fueron muchos los
+            instrumentos que sufrieron alteraciones en su diseño acústico tradicional e incorporaron algún tipo de
+            sistema eléctrico. La guitarra fue uno de los primeros en adaptarse y a pesar de que varias marcas
+            innovaron en esa dirección en poco tiempo, la manufactura de la primera guitarra eléctrica se le puede
+            atribuir a la marca Rickenbacker.
+
+            Los primeros músicos en adoptar este sistema para tocar fueron guitarristas de operetas y jazz, quienes
+            previamente no contaban con los medios para que su instrumento se escuchara dentro de las orquestas. Leo
+            Fender diseñó la primera guitarra eléctrica sólida con mástil desmontable y pocas piezas, para que los
+            intérpretes no tuvieran problemas al tener que cambiar piezas del instrumento gastadas o rotas por el
+            uso. Era el nacimiento de la Fender Broadcaster, la cual tenía forma de Telecaster pero tuvo problemas
+            con el nombre con Gretsch, quien le prohibió utilizar ese nombre. Las guitarras de esos años son conocidas
+            como Nocaster hasta que se inventó el nombre "Telecaster", primera de muchas guitarras eléctricas de
+            cuerpo sólido, dando paso a una era de músicos.</p>
+    </section>
+
+    <section>
+        <div id="tipos" class="content">
+            <h2 class="title4">Tipos de Guitarras Eléctricas</h2>
+            <div class="container">
+                <div class="card">
+                    <center class="color2">STRATOCASTER</center>
+                    <p class="parrafo">Guitarra de cuerpo macizo, obtenida a partir de una a
+                        tres piezas de madera.</p>
+                    <img src="strato.jpg" height="400px" width="350px" class="highlight-animation">
+                </div>
+                <div class="card">
+                    <center class="color2">LES PAUL</center>
+                    <p class="parrafo">Guitarra de gama alta, obtenida a partir de una madera
+                        caoba, con muchp susten.</p>
+                    <img src="gibson3.jpg" height="250px" width="300px" class="highlight-animation">
+                </div>
+                <div class="card">
+                    <center class="color2">TELECASTER</center>
+                    <p class="parrafo">Guitarra de cuerpo macizo mundialmente conocida, llamada
+                        "la tabla" .</p>
+                    <img src="tele.jpg" height="400px" width="350px" class="highlight-animation">
+                </div>
+                <div class="card">
+                    <center class="color2">JAZZMASTER</center>
+                    <p class="parrafo">Guitarra de cuerpo macizo, flexible y auténtico,
+                        sonido muy limpio.</p>
+                    <img src="jazz.jpg" height="400px" width="350px" class="highlight-animation">
+                </div>
+                <div class="card">
+                    <center class="color2">SEMIHOLLOW</center>
+                    <p class="parrafo">Guitarra de un cuerpo hueco con una cámara de
+                        resonancia.</p>
+                    <img src="holllow.jpg" height="400px" width="350px" class="highlight-animation">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/jhoelyesid.mamanicondori" target="_blank"><img src="facebook-logo.png" alt="Facebook"></a>
+            <a href="https://api.whatsapp.com/send?phone=+59167114716" target="_blank"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/jhoelyesid/?hl=es-la" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
